@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+x03-support-files/
+01-data/*
+!01-data/placeholder-delete.txt
+x04-manuscript/
+x05-metadata/
+06-cache/*
+!06-cache/placeholder-delete.txt
+01-data.zip
+
