@@ -149,7 +149,7 @@ legend(850000,1750000,legend=c("-STAT,\n+gNAT", "Concurrence", "+STAT,\n-gNAT"),
 # Empty Plot 
 plot.new()
 
-# Difference between NSP Predictions and gNATSGO
+# Difference between NSP Predictions and STATSGO
 plot(nsp_stat_diff_soil,ext = lrr_albers_domain, col = c("#d53e4f", "grey80","#c6dbef", "#9ecae1","#6baed6","#3182bd","#08519c"),mar=c(2,2,1.5,3),legend = NULL)
 polys(lrr_albers_AK, lwd=0.25)
 
@@ -158,13 +158,13 @@ text(-6.0e+05,2200000, "C", font = 1, cex=1)
 text(1000000,1900000, substitute(paste(italic("STATSGO-\nNSP Model\nConcurrence"))), font = 1, cex=1)
 legend(850000,1750000,legend=c("STATSGO", "Concurrence", "+1 NSP Model", "+2 NSP Model", "+3 NSP Model", "+4 NSP Model", "+5 NSP Model"), box.lwd = 0.5, lty = NULL, pt.bg=c("#d53e4f", "grey80","#c6dbef", "#9ecae1","#6baed6","#3182bd","#08519c"), pt.lwd = 0.5, pch = c(22, 22,22,22,22), col = "black", cex=0.7)
 
-# Difference between NSP predictions and STATSGO
+# Difference between NSP predictions and gNATSGO
 plot(nsp_gnat_diff_soil,ext = lrr_albers_domain, col = c("#d53e4f", "grey80","#c6dbef", "#9ecae1","#6baed6","#3182bd","#08519c"),mar=c(2,2,1.5,3),legend = NULL)
 polys(lrr_albers_AK, lwd=0.25)
 
 symbols(-6.0e+05,2200000, circles=1e05, inches=FALSE, fg="black", add=T, lwd=0.5)
 text(-6.0e+05,2200000, "D", font = 1, cex=1)
 text(1000000,1900000, substitute(paste(italic("gNATSGO-\nNSP Model\nConcurrence"))), font = 1, cex=1)
-legend(850000,1750000,legend=c("STATSGO", "Concurrence", "+1 NSP Model", "+2 NSP Model", "+3 NSP Model", "+4 NSP Model", "+5 NSP Model"), box.lwd = 0.5, lty = NULL, pt.bg=c("#d53e4f", "grey80","#c6dbef", "#9ecae1","#6baed6","#3182bd","#08519c"), pt.lwd = 0.5, pch = c(22, 22,22,22,22), col = "black", cex=0.7)
+legend(850000,1750000,legend=c("gNATSGO", "Concurrence", "+1 NSP Model", "+2 NSP Model", "+3 NSP Model", "+4 NSP Model", "+5 NSP Model"), box.lwd = 0.5, lty = NULL, pt.bg=c("#d53e4f", "grey80","#c6dbef", "#9ecae1","#6baed6","#3182bd","#08519c"), pt.lwd = 0.5, pch = c(22, 22,22,22,22), col = "black", cex=0.7)
 
 dev.off()
